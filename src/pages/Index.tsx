@@ -187,7 +187,7 @@ const Index = () => {
                     <p><span className="font-semibold text-foreground">Solução:</span> <span className="text-muted-foreground">{p.solucao}</span></p>
                     <p><span className="font-semibold text-primary">Resultado:</span> <span className="text-muted-foreground">{p.resultado}</span></p>
                   </div>
-                  <Button onClick={() => window.open(`https://wa.me/5500000000000/?text=${p.msgDeContato}`, '_blank')} variant="ghost" size="sm" className="bg-transparent p-0 hover:bg-transparent hover:text-primary group-hover:text-primary transition-colors gap-1">
+                  <Button onClick={() => window.open(`https://wa.me/${NumeroComercial}/?text=${p.msgDeContato}`, '_blank')} variant="ghost" size="sm" className="bg-transparent p-0 hover:bg-transparent hover:text-primary group-hover:text-primary transition-colors gap-1">
                     Entre Em Contato <ChevronRight size={16} />
                   </Button>
                 </div>
