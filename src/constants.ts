@@ -1,0 +1,1 @@
+export const NumeroComercial = "5543996382494";
