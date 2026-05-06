@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import { useState } from "react";
 import { toast } from "sonner";
 import { fadeUp } from "@/lib/animations";
+import { NumeroComercial } from "@/constants";
 
 const Contato = () => {
   const [form, setForm] = useState({ nome: "", email: "", mensagem: "" });
@@ -107,7 +108,7 @@ const Contato = () => {
                 <h3 className="font-display text-xl font-bold mb-6">Outras formas de contato</h3>
                 <div className="space-y-4">
                   <a
-                    href="https://wa.me/5500000000000"
+                    href={`https://wa.me/${NumeroComercial}`} 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-4 p-4 rounded-xl bg-secondary hover:bg-primary hover:text-primary-foreground transition-all duration-300 group"
